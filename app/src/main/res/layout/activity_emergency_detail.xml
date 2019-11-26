@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activities.EmergencyDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/sponsors_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_hospital_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Medical Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hospital_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hospital_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Hospital Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hospital_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Type"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_type"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Type"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Available"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_available"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Available"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/available"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="Address"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_needing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Needing"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/needing"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tv_needing"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@drawable/home_background_file"
+                    android:drawableStart="@drawable/ic_keyboard"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/font_medium"
+                    android:hint="Qty"
+                    android:imeActionLabel="Next"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColorHint="#7c7c7c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/needing"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Price"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_margin="5dp"
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_corner"
+                    android:padding="10dp"
+                    android:text="Image of the report"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_img"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@drawable/home_background_file"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/font_medium"
+                    android:gravity="top|start"
+                    android:hint="Write Your Report"
+                    android:imeActionLabel="Next"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:padding="8dp"
+                    android:paddingStart="35dp"
+                    android:paddingEnd="35dp"
+                    android:scrollbars="vertical"
+                    android:textColorHint="#7c7c7c"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/accept_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_corner"
+            android:text="Accept Request"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/cancel_request"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/accept_request"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginLeft="43dp"-->
+        <!--android:layout_marginRight="43dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/round_corner2"-->
+        <!--android:text="Cancel Request"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20sp" />-->
+
+    </RelativeLayout>
+</ScrollView>

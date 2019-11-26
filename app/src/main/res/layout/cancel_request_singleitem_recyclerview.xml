@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sponsors_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/medical_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Medical Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/medical_name"
+                android:layout_toRightOf="@+id/medical_name"
+                android:gravity="end"
+                android:text="Price"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/medical_name_specialties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medical_name"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Medical Speciality"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/request_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medical_name_specialties"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="User Name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/request_admin_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request_admin_name"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Phone"
+                android:visibility="gone" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/address"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/request_admin_phone"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="Address"-->
+                <!--android:visibility="gone" />-->
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request_admin_phone"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="StartT ime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/request_admin_phone"
+                android:layout_toEndOf="@+id/start_time"
+                android:layout_toRightOf="@+id/start_time"
+                android:gravity="end"
+                android:text="End Time"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

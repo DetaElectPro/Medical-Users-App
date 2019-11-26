@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sponsors_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.ShowHistoryRequestsDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_medical_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Medical Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medical_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_medical_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Medical Name"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_medical_name_specialties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medical_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Medical Speciality"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medical_name_specialties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_medical_name_specialties"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Medical Speciality"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_request_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medical_name_specialties"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="User Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/request_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_request_admin_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="User Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_request_admin_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request_admin_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Phone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/request_admin_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_request_admin_phone"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Phone"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request_admin_phone"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:text="Address"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Start Time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_start_time"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Start Time"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/address"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tv_start_time"
+                android:layout_toRightOf="@+id/tv_start_time"
+                android:gravity="end"
+                android:text="End Time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_end_time"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/start_time"
+                android:layout_toRightOf="@+id/start_time"
+                android:gravity="end"
+                android:text="End Time"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_time"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price"
+                android:layout_margin="5dp"
+                android:text="Price"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <!--<EditText-->
+            <!--android:id="@+id/note"-->
+            <!--android:layout_below="@+id/card_view"-->
+            <!--android:layout_marginTop="@dimen/margin_10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/home_background_file"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:lines="4"-->
+            <!--android:visibility="visible"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:gravity="top|start"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:fontFamily="@font/font_medium"-->
+            <!--android:hint="Notes"-->
+            <!--android:imeActionLabel="Next"-->
+            <!--android:imeOptions="actionUnspecified"-->
+            <!--android:textColorHint="#7c7c7c"-->
+            <!--android:textSize="15sp"-->
+            <!--tools:ignore="RtlHardcoded" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/recommendations"-->
+            <!--android:layout_below="@+id/note"-->
+            <!--android:layout_marginTop="@dimen/margin_10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/home_background_file"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:visibility="visible"-->
+            <!--android:lines="4"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:gravity="top|start"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:fontFamily="@font/font_medium"-->
+            <!--android:hint="Recomendations"-->
+            <!--android:imeActionLabel="Next"-->
+            <!--android:imeOptions="actionUnspecified"-->
+            <!--android:textColorHint="#7c7c7c"-->
+            <!--android:textSize="15sp"-->
+            <!--tools:ignore="RtlHardcoded" />-->
+
+        <!--<RatingBar-->
+            <!--android:id="@+id/simpleRatingBar"-->
+            <!--android:layout_below="@+id/recommendations"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:rating="2" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/accept_request"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/simpleRatingBar"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginLeft="43dp"-->
+        <!--android:layout_marginRight="43dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:background="@drawable/round_corner"-->
+        <!--android:text="Finish Request"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20sp" />-->
+
+    </RelativeLayout>
+
+</ScrollView>

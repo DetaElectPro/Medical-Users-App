@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/request_doctor"
+        android:icon="@drawable/request_doctor2"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/icu"
+        android:icon="@drawable/icu"
+        android:title="@string/icu" />
+
+    <item
+        android:id="@+id/ambulance"
+        android:icon="@drawable/ambulance2"
+        android:title="@string/ambulance" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account_circle_36dp"
+        android:title="@string/profile" />
+
+
+</menu>

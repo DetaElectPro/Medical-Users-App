@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.detatech.vitaluser.Activities.Login2Activity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+
+        <EditText
+            android:id="@+id/login2_job_title"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/job_title"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login2_graduation_date"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/graduation_date"
+            android:focusable="false"
+            android:inputType="date"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login2_birth_of_date"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/birth_of_date"
+            android:focusable="false"
+            android:inputType="date"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login2_address"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login2_experience"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="Years of Experience"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <Button
+            android:id="@+id/login2_choose_fileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_corner"
+            android:padding="10dp"
+            android:text="CV Upload"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/login2_upload_fileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/round_corner"
+            android:text="Uplaod File"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <Button
+        android:id="@+id/login2_loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_corner"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

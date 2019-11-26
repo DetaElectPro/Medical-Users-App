@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.detatech.vitaluser.Activities.Login3Activity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Medical Registrations Details"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/login3_registration_number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/registration_number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login3_name"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login3_field"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/login3_registration_date"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/registration_date"
+            android:inputType="date"
+            android:focusable="false"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <Button
+            android:id="@+id/login3_loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_corner"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

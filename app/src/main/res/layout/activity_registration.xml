@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo3"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:orientation="vertical"
+    tools:context="com.detatech.vitaluser.Activities.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/register_fullName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/full_name"
+            android:text=""
+            android:inputType="text"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="@string/phone_number"
+            android:text=""
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:hint="Password"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+
+        <Button
+            android:id="@+id/register_registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/round_corner"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/register_loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_corner2"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1018949705134",
+    "firebase_url": "https://user-545cd.firebaseio.com",
+    "project_id": "user-545cd",
+    "storage_bucket": "user-545cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018949705134:android:5bbd535bde0246caae7c3f",
+        "android_client_info": {
+          "package_name": "com.detatech.vitaluser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018949705134-n25uqtpppt1b6gh944r4rlmr7ss1mkr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH5PCqqtqo7FZ__FMXWZKZmglkF8DT8hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018949705134-n25uqtpppt1b6gh944r4rlmr7ss1mkr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Vital Health User</string>
+
+    <string name="google_maps_key">AIzaSyCJJuPJP9QECf1IdIN2OfdHUnCBGZN1MP8</string>
+
+    <!--Activity Register-->
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="job_title">Job title</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="mobile_no">9876543210</string>
+    <string name="password_txt">******</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="graduation_date">Date of Graduation</string>
+    <string name="birth_of_date">Date of Birth</string>
+    <string name="name">Name</string>
+    <string name="field">Field</string>
+    <string name="registration_date">Registration Date</string>
+
+    <!-- Error Messages-->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="something_went_wrong_net">Something went wrong, Please check internet connection</string>
+    <string name="oops_connect_your_internet">Oops ! Connect your Internet</string>
+    <string name="server_down">Unable to reach server</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="please_try_login_again">Please try login again</string>
+    <string name="email_validation">Enter your email ID</string>
+    <string name="not_valid_email">Not a valid email ID</string>
+    <string name="password_validation">Password could not be left empty</string>
+    <string name="password_size">Password size must be atleast 6</string>
+    <string name="full_name_empty">Full name required</string>
+    <string name="full_name_no_number">First name do not accept numbers</string>
+    <string name="mobile_number_empty">Mobile number required</string>
+    <string name="job_title_empty">Job title required</string>
+    <string name="address_empty">Address required</string>
+    <string name="mobile_number_validation">Mobile number must have numbers between 10 to 14 digits</string>
+    <string name="read_file">This app needs access to your file storage so that it can read files.</string>
+
+
+    <!--True or False -->
+    <string name="True">true</string>
+    <string name="False">false</string>
+
+    <!-- Category -->
+    <string-array name="category_array">
+        <item></item>
+        <item>Khartoum</item>
+
+    </string-array>
+
+    <!-- Subcategory -->
+    <string-array name="sub_category_array">
+        <item></item>
+        <item>Khartoum</item>
+
+    </string-array>
+
+    <string name="home">Requests</string>
+<!--    <string name="requests">Requests</string>-->
+    <string name="requests">Medical Stuff</string>
+    <string name="icu">Services</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="profile">Profile</string>
+
+
+    <string name="add_request">Request Added Successfully</string>
+    <string name="accept_request">Accept Added Successfully</string>
+    <string name="pdf_success">PDF Uploaded Successfully</string>
+    <string name="image_success">Image Uploaded Successfully</string>
+
+</resources>
